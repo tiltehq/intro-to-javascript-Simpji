@@ -94,3 +94,16 @@ null = Object
 "ALOHA!"
 "ALOHA".toLowerCase()
 "aloha"
+
+// we have already seen a couple of operators
+"ALOHA" + "!"
+"ALOHA!"
+
+// Arithmetic operators
++ add
+- subtract
+* multiply
+/ divide
+
+// oder of operations
+4 + 1 * 2 * 4 + 2
