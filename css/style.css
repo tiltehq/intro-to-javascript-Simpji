@@ -11,18 +11,12 @@ html{
     list-style: none;
     text-decoration: none;
 }
-.container{
-    /* border: 1px solid red; */
+/* .container{
     width: 90%;
     margin: 0 auto; 
-}
+} */
 
-#banner{
-    background: url(/img/wave.svg);
-    background-attachment: fixed;
-    height: 100vh;
-    background-size: cover;
-}
+/* */
 
 
 #banner .container img{
