@@ -114,3 +114,66 @@ null = Object
 4 > 5 (false)
 4 < 5(true)
 5 < 4(false)
+
+// Expressions
+"FrontendMaster".includes("Front" + "end")
+true
+"Front" + "end"
+"Frontend"
+
+// Declaring and assigining variable
+let remember = "june.21";
+UnderFined
+remember = "june. 21"
+let good;
+// we DonOt have any value on it we got underFined
+UnderFined
+myDeclaredVariable = "so much value wow";
+"so much value wow"
+
+// Const Declared and assigns a "constant" Variable that CanOt be Changed
+const UnchangeableVariable = " wow it CanOt be change";
+undefined
+ UnchangeableVariable
+' wow it CanOt be change'
+42 - 10 
+32
+let answerToLife = 42;
+32
+// Variable Exercise
+let name = "simple"
+undefined
+name
+'simple'
+document.getElementById("board")
+let board = document.getElementById("board")
+undefined
+
+// Evaluating Code
+let answerToLife = ((4 + 1) * 2 * 4) + 2;
+undefined
+answerToLife
+42
+let scrub = " you are my guy";
+let busta =scrub;
+scrub = "you always be my friend";
+
+// Array 
+let synonyms = ["good", "life", "mater"];
+undefined
+synonyms
+(3) ['good', 'life', 'mater']
+synonyms[1] = "variety";
+'variety'
+synonyms
+(3) ['good', 'variety', 'mater']
+let lastItem = synonyms.pop()
+undefined
+lastItem
+'mater'
+synonyms
+(2) ['good', 'life']
+synonyms.push("multitude");
+3
+synonyms
+(3) ['good', 'life', 'multitude']
