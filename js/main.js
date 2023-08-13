@@ -107,3 +107,10 @@ null = Object
 
 // oder of operations
 4 + 1 * 2 * 4 + 2
+// (4 + 1) * 2 = 10
+1 + 2 
+(8 * 7)/ 7
+5 > 4 (true)
+4 > 5 (false)
+4 < 5(true)
+5 < 4(false)
