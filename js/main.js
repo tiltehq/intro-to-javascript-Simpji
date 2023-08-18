@@ -106,7 +106,7 @@ null = Object
 / divide
 
 // oder of operations
-4 + 1 * 2 * 4 + 2
+// 4 + 1 * 2 * 4 + 2
 // (4 + 1) * 2 = 10
 1 + 2 
 (8 * 7)/ 7
@@ -123,7 +123,7 @@ true
 
 // Declaring and assigining variable
 let remember = "june.21";
-UnderFined
+underfined
 remember = "june. 21"
 let good;
 // we DonOt have any value on it we got underFined
@@ -136,7 +136,7 @@ const UnchangeableVariable = " wow it CanOt be change";
 undefined
  UnchangeableVariable
 ' wow it CanOt be change'
-42 - 10 
+42 - 10
 32
 let answerToLife = 42;
 32
@@ -177,3 +177,265 @@ synonyms.push("multitude");
 3
 synonyms
 (3) ['good', 'life', 'multitude']
+
+// useful Array method
+["a", "b", "c", "d"].sort()
+(4) ['a', 'b', 'c', 'd']
+// [3, 4, 1, 2,].sort()
+(4) [1, 2, 3, 4]
+// [100, 1, 10,].sort()
+(3) [1, 10, 100]
+["100", "1", "10"].sort()
+(3) ['1', '10', '100']
+["goat", "lions", "tigers", "bears oh my!"].join(" & ")
+'goat & lions & tigers & bears oh my!'
+["simple", "williams"]
+(2) ['simple', 'williams']
+let name = ["simple", "williams"]
+undefined
+name[0] + " " + name[1]
+'simple williams'
+name.join(" ")
+'simple williams'
+name.join()
+'simple,williams'
+
+[1, 2, 3].concat([4, 5, 6])
+(6) [1, 2, 3, 4, 5, 6]
+[1, 2, 3].push(4)
+4
+let a =[1, 2, 3]
+undefined
+a
+(3) [1, 2, 3]
+a.push(4)
+4
+a
+(4) [1, 2, 3, 4]
+b.push[5, 6, 7]
+undefined
+b.push([5, 6, 7])
+5
+b
+(5) [1, 2, 3, 4]
+
+MUTABILITY
+let AbcArray= ["a", "b", "c"];
+undefined
+AbcArray
+(3) ['a', 'b', 'c']
+AbcArray[1] = "d";
+'d'
+AbcArray
+(3) ['a', 'd', 'c']
+let AbcString = "abc";
+undefined
+AbcString
+'abc'
+AbcString[1] = "d"
+'d'
+AbcString
+'abc'
+// mutable and immutable data Exerise
+let number1 = [1, 2, 3];
+undefined
+number1
+(3) [1, 2, 3]
+let result1 = number1.push(4)
+undefined
+result1
+4
+number1
+(4) [1, 2, 3, 4]
+let number2 = [1, 2, 3]
+undefined
+number2
+(3) [1, 2, 3]
+// Variable themselves can also be (im) mutable
+let LetVariable = "original value"
+undefined
+LetVariable
+'original value'
+LetVariable = " new value"
+' new value'
+const ConstVariable = " original value"
+undefined
+ConstVariable
+' original value'
+// Immutable variable with mutable value
+const operands =[4, 6];
+undefined
+operands
+(2) [4, 6]
+const sum = operands[0] + operands[1];
+undefined
+sum
+10
+operands[0] =5;
+5
+const newsum =operands[0] + operands[1];
+undefined
+newsum
+11
+// Variable and array
+let array1 = [1, 2, 3];
+undefined
+array1
+(3) [1, 2, 3]
+let array2 = array1;
+undefined
+array2 
+(3) [1, 2, 3]
+array1[1] = 5;
+5
+array1
+(3) [1, 5, 3]
+array2
+(3) [1, 5, 3]
+// Objects and property acces
+const js = {
+    name: "javaScripts",
+    abbreviation: "JS",
+    isAwesome: true,
+    officialspec: "ECMAScript",
+    birthYear: 1995,
+    creator: "brendan Eich"
+};
+undefined
+js
+// {name: 'javaScripts', abbreviation: 'JS', isAwesome: true, officialspec: 'ECMAScript', birthYear: 1995, …}
+js.name
+'javaScripts'
+js.isAwesome
+true
+js.name.startsWith("java")
+true
+js.name
+'javaScripts'
+let age = 2022 - js.birthYear;
+undefined
+age
+27
+// Setting  Property values
+const indecisive = {
+    lunch: "sandwhich"
+};
+undefined
+indecisive
+// {lunch: 'sandwhich'}lunch: "sandwhich"[[Prototype]]: Object
+indecisive.lunch
+'sandwhich'
+indecisive.lunch = "tacos";
+'tacos'
+indecisive.snack = "ships";
+'ships'
+indecisive
+// {lunch: 'tacos', snack: 'ships'}
+
+// Visaulizing object Access
+typeof { snack: "ships"}
+'object'
+typeof ["ships"]
+'object'
+["ships"].length
+1
+["ships", "tacos"][0]
+'ships'
+
+//  Object Exercise
+const simple = {
+    name: "simple",
+    home: "20A medical Road ikeja lagos",
+    languages: ["English", "igbo", "china"],
+    pet: null,
+    vehicle: "Toyata",
+    hobbies: ["travel", "playing", "music", "money"],
+};
+// {name: 'simple', home: '20A medical Road ikeja lagos', languages: Array(3), pet: null, vehicle: 'Toyata', …}
+hobbies
+: 
+(4) ['travel', 'playing', 'music', 'money']
+home
+: 
+"20A medical Road ikeja lagos"
+languages
+: 
+(3) ['English', 'igbo', 'china']
+name
+: 
+"simple"
+pet
+: 
+null
+vehicle
+: 
+"Toyata"
+
+// Methods
+const dog = {
+    name: "kiss",
+    breed: "corgi",
+    speak: function () {
+        console.log("woof woof");
+    }
+}
+undefined
+dog
+// {name: 'kiss', breed: 'corgi', speak: }
+dog.speak()
+//  woof woof
+undefined
+
+const simple = {name: "simple"}
+undefined
+simple
+{name: 'simple'}
+simple.speak = function () {
+    console.log('hi my name is', this.name);
+}
+simple.speak()
+//  hi my name is simple
+ underfined
+
+//  Object in Array object
+const spices = [
+    {name: "simple", nickname: "baby"},
+    {name: "williams", nickname: "will"},
+    {name: "sunday", nickname: "sunn"},
+    {name: "henry", nickname: "victor"},
+];
+const spicesGirls = {
+    albums: ["Spices", "Spiceworld", "foever"],
+    motor: "Girl power"
+};
+
+// Build in object
+console.log("hi")
+ hi
+undefined
+console.warn("oh")
+ oh 
+undefined
+console.error("no")
+no
+undefined
+
+Math
+Math.PI
+3.141592653589793
+Math.random()
+0.8428400624667989
+Math.random()
+0.6361760816907729
+let s = "string"
+undefined
+s.toUpperCase()
+'STRING'
+s
+'string'
+let s2 = s.toUpperCase()
+undefined
+s2
+'STRING'
+s
+'string'
