@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz.js</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz.js</h1>
+        <p>Do you know js? fined out!</p>
+    </header>
+    <main>
+        <div id="statement">
+
+        </div>
+
+        <div id="options">
+            <button name="true" value="true">true</button>
+            <button name="false" value="false">false</button>
+        </div>
+
+        <div id="explanation">
+
+        </div>
+    </main>
+
+
+
+    <script type="text/javaScripts"></script>
+</body>
+
+<script>
+    const statement = document.getElementById("statement");
+    const optionsButton = document.querySelector("#options").children;
+    const explanation = document.getElementById("explanation");
+    const fact = {
+        statement: "Array are like object",
+        answer: true,
+        explanation: "Array are a kind of object with special properties",
+    };
+    statement.textContent = fact.statement;
+
+    const disable = (button) => {
+        button.setAttribute("disabled", "");
+    }
+    const enable = (button) => button.removeAttribute("disabled");
+    function isCorrect(guessString) {
+        return guessString === fact.answer.toString();
+    }
+
+    trueButton.addEventListener("click", (event) => {
+        trueButton.textContent =
+            trueButton.textContent.toUpperCase();
+    });
+    h1.addEventListener("mouseover", () => {
+        h1.textContent = "hovering";
+    });
+</script>
+
+</html>
