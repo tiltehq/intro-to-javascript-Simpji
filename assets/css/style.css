@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 body{
     padding: 2rem 5rem;
@@ -11,4 +12,143 @@ h1 {
 }
 h2 {
     padding-bottom: 1rem;
+}
+
+body{
+    margin: 1rem auto;
+    padding: 3rem;
+}
+header{
+    width: 50%;
+    margin: 1em auto;
+}
+main{
+    min-width: 25rem;
+    max-width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+#statement{
+    border: 1px solid black;
+    border-radius: o.5rem;
+    box-shadow: 5px 5px 5px gray;
+    padding: 1rem;
+    font-size: x-large;
+    text-align: center;
+    margin: 1rem 0px;
+    min-width: 2em;
+}
+#explanation{
+    padding: 1rem;
+    text-align: center;
+}
+#options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    padding: 0.5rem;
+    font-size: medium;
+    border-radius: 5px;
+}
+button:hover{
+    background: lime;
+}
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: lightpink;
+}
+
+/* click styling */
+h1{
+    margin-bottom: 1rem;
+}
+.box{
+    border: 3px solid grey;
+    padding: 1em;
+}
+.hidden{
+    display: none;
+}
+#click{
+    background: green !important;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 1em;
+    border: 0px;
+    border-radius: 5px;
+}
+
+/* Quiz styling */
+body{
+    margin: 1rem auto;
+    padding: 3rem;
+}
+header{
+    width: 50%;
+    margin: 1em auto;
+}
+main{
+    min-width: 25rem;
+    max-width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+#statement{
+    border: 1px solid black;
+    border-radius: o.5rem;
+    box-shadow: 5px 5px 5px gray;
+    padding: 1rem;
+    font-size: x-large;
+    text-align: center;
+    margin: 1rem 0px;
+    min-width: 2em;
+}
+#explanation{
+    padding: 1rem;
+    text-align: center;
+}
+#options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    padding: 0.5rem;
+    font-size: medium;
+    border-radius: 5px;
+}
+button:hover{
+    background: lime;
+}
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: lightpink;
+}
+
+/* click styling */
+h1{
+    margin-bottom: 1rem;
+}
+.box{
+    border: 3px solid grey;
+    padding: 1em;
+}
+.hidden{
+    display: none;
+}
+#click{
+    background: green !important;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 1em;
+    border: 0px;
+    border-radius: 5px;
 }
