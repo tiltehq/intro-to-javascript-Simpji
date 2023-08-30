@@ -302,15 +302,15 @@ if (5 < 4) {
 }
 
 // We can chain else and if blocks to account for multipl condition
-// function compare(x, y) {
-//     if(x > y) {
-//         console.log(x, "is greater than", y);
-//     }else if (x < y) {
-//         console.log(x, "less than ", y);
-//     }else{
-//         console.log(x, "is equal", y);
-//     }
-// }
+function compare(x, y) {
+    if(x > y) {
+        console.log(x, "is greater than", y);
+    }else if (x < y) {
+        console.log(x, "less than ", y);
+    }else{
+        console.log(x, "is equal", y);
+    }
+}
 undefined
 compare(3,2)
 // 3'is greater than' 2
