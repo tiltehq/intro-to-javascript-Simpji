@@ -274,9 +274,9 @@ trueButton.addEventListener("click", (event) =>{
     trueButton.textContent =
     trueButton.textContent.toUpperCase();
 });
-h1.addEventListener("mouseover", () => {
-    h1.textContent = "hearing";
-});
+// h1.addEventListener("mouseover", () => {
+//     h1.textContent = "hearing";
+// });
 h1.addEventListener("mouseout", () => {
     h1.textContent = "Quiz.js";
 });
