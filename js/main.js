@@ -277,3 +277,117 @@ trueButton.addEventListener("click", (event) =>{
 h1.addEventListener("mouseover", () => {
     h1.textContent = "hearing";
 });
+h1.addEventListener("mouseout", () => {
+    h1.textContent = "Quiz.js";
+});
+
+// Conditionals
+if (you.WannaBeMyLover) {
+    you.GottaGetWithMyFriend = true;
+}
+if (you.ReallyMyFriend(me)) {
+    me.say("GoodBye");
+}else{
+    me.say("Hello");
+}
+if (5 > 4) {
+    console.log("greater than");
+}else{
+    console.log("less than");
+}
+if (5 < 4) {
+    console.log("greater than");
+}else{
+    console.log("less than");
+}
+
+// We can chain else and if blocks to account for multipl condition
+function compare(x, y) {
+    if(x > y) {
+        console.log(x, "is greater than", y);
+    }else if (x < y) {
+        console.log(x, "less than ", y);
+    }else{
+        console.log(x, "is equal", y);
+    }
+}
+undefined
+compare(3,2)
+// 3'is greater than' 2
+undefined
+compare(2, 3)
+// 2 'less than ' 3
+undefined
+compare(2, 2)
+// 2 'is equal' 2
+undefined
+
+if (forecast === "rain") {
+    console.log("bring an umbrella");
+}
+if ("nonempty string are truthy") {
+    console.log("this line will run");
+}
+// this line will run
+undefined
+if (0) {
+    console.log("zero is truthy");
+}else{
+    console.log("zero is false");
+}
+// zero is false
+UnderFined
+
+// Conditional Exercise
+let firstName = "simple";
+let lastName = "williams";
+undefined
+if(firstName.length > lastName.length) {
+    console.log(firstName, "sin longer than", lastName);
+}else{
+    console.log(lastName, "is grater than", firstName);
+}
+//  williams is grater than simple
+undefined
+function isEmpty(array) {
+    if(array.length ===0) {
+        return true;
+    }else{
+        return false;
+    }
+}
+undefined
+isEmpty([])
+true
+isEmpty([1, 2, 3])
+false
+if ([]) {
+    console.log("Empty array is truthy");
+}else{
+    console.log("Empty array is falsy");
+}
+// Empty array is truthy
+undefined
+if ("") {
+    console.log("Empty string is truthy");
+}else{
+    console.log("Empty string is falsy");
+}
+// Empty string is falsy
+undefined
+if (null) {
+    console.log("null is truthy");
+}else{
+    console.log("null is falsy");
+}
+// null is falsy
+undefined
+if("false") {
+    console.log("string 'false' is truthy");
+}else{
+    console.log("string 'false' is falsy");
+}
+// string 'false' is truthy
+undefined
+
+// Logical and ternary operator
