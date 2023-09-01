@@ -310,7 +310,7 @@ function compare(x, y) {
     }else{
         console.log(x, "is equal", y);
     }
-};
+}
 undefined
 compare(3,2)
 // 3'is greater than' 2
