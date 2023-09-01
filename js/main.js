@@ -310,7 +310,7 @@ function compare(x, y) {
     }else{
         console.log(x, "is equal", y);
     }
-}
+};
 undefined
 compare(3,2)
 // 3'is greater than' 2
@@ -390,4 +390,38 @@ if("false") {
 // string 'false' is truthy
 undefined
 
-// Logical and ternary operator
+// Loop
+for (let rep = 0; rep < 10; rep += 1) {
+    console.log("now am doing rep", rep);
+}
+console.log("do you even lift bro");
+for (let count = 0; count <= 100; count += 10) {
+    console.log(count);
+}
+for (let start = 0; start <= 200; start += 50){
+    console.log(start);
+}
+const numbers = [1, 2, 3];
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+for (let n of numbers){
+    console.log(n);
+}
+for (let hello of "SIMPLE") {
+    console.log(hello);
+}
+for (let item of ["pop", 6, "squish"]) {
+    console.log(typeof item);
+}
+
+// Explanation loop project Exercise
+for (let button of optionsButtons) {
+    console.log(button);
+}
+for (let button of optionsButtons) {
+        button.addEventListener("click", (event) => {
+            console.log("heard a click");
+        });
+    }
+    explanation.textContent = fact.explanation
