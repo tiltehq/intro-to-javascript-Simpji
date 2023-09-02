@@ -43,9 +43,9 @@ button{
     font-size: medium;
     border-radius: 5px;
 }
-button:hover{
+/* button:hover{
     background: lime;
-}
+} */
 .correct{
     background-color: green;
 }

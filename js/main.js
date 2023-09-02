@@ -270,6 +270,32 @@ h1
 // h1 = h1[0]
 // <h1>​​</h1>​
 h1
+
+// loop
+for (let rep = 0; rep < 10; rep +=1) {
+    console.log("now am doing rep", rep);
+}
+console.log("do even lift bro");
+
+for (let count = 0; count <= 100; count += 10) {
+    console.log(count);
+}
+
+const numbers = [1, 2, 3];
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+
+for (let n of numbers) {
+    console.log(n);
+}
+for (let will of "SIMPLE") {
+    console.log(will);
+}
+for (let item of ["pop", 6, "squish"]) {
+    console.log(typeof item);
+}
+
 trueButton.addEventListener("click", (event) =>{
     trueButton.textContent =
     trueButton.textContent.toUpperCase();
@@ -277,3 +303,12 @@ trueButton.addEventListener("click", (event) =>{
 h1.addEventListener("mouseover", () => {
     h1.textContent = "hearing";
 });
+h1.addEventListener("mouseout", (event) =>{
+    h1.textContent = "Quiz";
+});
+//  isCorrect Project Exercise
+if (isCorrect(button.value)) {
+    button.classlist.add("isCorrect");
+}else{
+    button.classlist.add("incorrect");
+}
