@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <h1>Very Exciting Web Page</h1>
+    <div class="box">
+        <p id="in">Hello i am in a box</p>
+    </div>
+    <p id="out" class="hidden">Now i have escaped</p>
+    <button id="clickme">Click me</button>
+</body>
+
+<script>
+    const button = document.getElementById("clickme");
+    const paragraphs = document.querySelectorAll("p");
+
+    button.addEventListener("click", event => {
+        for (let p of paragraphs) {
+            p.classList.toggle("hidden");
+        }
+    })
+</script>
+
+</html>
