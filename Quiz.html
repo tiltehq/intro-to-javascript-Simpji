@@ -62,6 +62,30 @@
         h1.addEventListener("mouseover", () => {
             h1.textContent = "hovering";
         });
+        h1.addEventListener("mouseout", () => {
+            h1.textContent = "Quiz";
+        });
+        for (let button of optionsButton) {
+            button.addEventListener("click", (event) => {
+                console.log("heard a click");
+
+
+                explanation.textContent = fact.explanation
+
+                for (let otherButton of optionsButton) {
+                    disable(otherButton);
+                }
+                for (let otherButton of optionsButton) {
+                    enable(otherButton);
+                }
+                if (isCorrect(button.value)) {
+                    button.classList.add("correct");
+                } else {
+                    button.classList.add("incorrect");
+                }
+            })
+        }
+
     </script>
 
 </body>
